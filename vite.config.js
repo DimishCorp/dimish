@@ -5,7 +5,7 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 
 export default defineConfig(({ mode }) => ({
   plugins: [vue(), vueDevTools()],
-  base: mode === 'production' ? '/dimish/' : '/',
+  base: mode === 'production' ? '/' : '/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
